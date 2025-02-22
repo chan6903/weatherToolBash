@@ -34,7 +34,7 @@ Ensure you have the following installed:
 1. Clone or download this repository.
 2. Navigate to the project folder:
    ```bash
-   cd weather-logger
+   cd weatherToolBash
    ```
 3. Ensure the script has execution permissions:
    ```bash
@@ -63,7 +63,7 @@ To log weather data for a specific city:
 ```
 Example:
 ```bash
-./weatherLog.sh "New York"
+./weatherLog.sh "Delhi"
 ```
 This will fetch weather data and store it in `weather.db`.
 
@@ -80,7 +80,7 @@ crontab -e
 ```
 Then, add this line at the bottom:
 ```bash
-0 * * * * /path/to/weatherLog.sh "New York" >> /path/to/weather_log.log 2>&1
+0 * * * * /path/to/weatherLog.sh "Delhi" >> /path/to/weather_log.log 2>&1
 ```
 (Change `/path/to/` to the actual path of the script.)
 
